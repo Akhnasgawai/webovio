@@ -36,6 +36,13 @@ html{
 
 #first-two-sections{
     position: relative;
+    hr{
+        height: 1px;
+        background-color: #DFDFDF;
+        border: none;
+        width: 80%;
+        margin: auto;
+    }
 }
 
 .company-logo{
@@ -237,14 +244,6 @@ html{
     }
 }
 
-hr{
-    height: 1px;
-    background-color: #DFDFDF;
-    border: none;
-    width: 80%;
-    margin: auto;
-}
-
 .project-intro{
     .container{
         max-width: 1140px;
@@ -275,6 +274,7 @@ hr{
     .container{
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
         .balenciaga-image{
             // margin: 0 auto;
@@ -325,7 +325,7 @@ hr{
     .balencia-wall-thought{
         position: absolute;
         bottom: 0;
-        left: 30%;
+        right: 40%;
         z-index: 999;
         .balencia-wall-card{
             width: 430px;
@@ -382,8 +382,9 @@ hr{
         flex-direction: row-reverse;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: center;
         .future-3D-image{
-            margin: 0 auto;
+            // margin: 0 auto;
             img{
                 width: 100%;
             }
@@ -486,9 +487,10 @@ hr{
     .container{
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
         .online-future-image{
-            margin: 0 auto;
+            // margin: 0 auto;
             img{
                 width: 100%;
             }
@@ -536,7 +538,7 @@ hr{
     .online-future-thought{
         position: absolute;
         bottom: 0;
-        left: 30%;
+        right: 40%;
         z-index: 999;
         .online-future-card{
             width: 430px;
@@ -661,6 +663,8 @@ hr{
                 padding-left: 15px;
                 line-height: 1.5;
                 width: 100%;
+                border: 2px solid red;
+                max-width: 40%;
             }
         }
         .evaluation-cards{
@@ -761,7 +765,9 @@ hr{
             }
         }
         hr{
+            height: 1px;
             background-color: #ADB78F;
+            border: none;
         }
         .footer-middle{
             display: flex;
@@ -915,6 +921,15 @@ hr{
     .get-started{
         top: 47%;
     }
+    .evaluation{
+        .container{
+            .evaluation-heading{
+                h2{
+                    max-width: 50%;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 977px){
@@ -973,6 +988,15 @@ hr{
             }
         }
     }
+    .evaluation{
+        .container{
+            .evaluation-heading{
+                h2{
+                    max-width: 55%;
+                }
+            }
+        }
+    }
     .footer{
         .container{
             .footer-middle{
@@ -1012,6 +1036,15 @@ hr{
 @media screen and (max-width: 794px) {
     .get-started{
         top: 57%;
+    }
+    .evaluation{
+        .container{
+            .evaluation-heading{
+                h2{
+                    max-width: 60%;
+                }
+            }
+        }
     }
 }
 
@@ -1081,6 +1114,18 @@ hr{
     }
 }
 
+@media screen and (max-width: 723px){
+    .evaluation{
+        .container{
+            .evaluation-heading{
+                h2{
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 691px) {
     .get-started{
         top: 50%;
@@ -1122,6 +1167,19 @@ hr{
         }
     }
 }
+
+@media screen and (max-width: 624px){
+    .evaluation{
+        .container{
+            .evaluation-heading{
+                h2{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and (max-width: 589px){
     .hero{
@@ -1260,6 +1318,27 @@ hr{
             }
         }
     } 
+    .balenciaga-wall{
+        .container{
+            .balenciaga-wall-content{
+                padding-top: 160px;
+            }
+        }
+    }
+    .future-3D{
+        .container{
+            .future-3D-content{
+                padding-top: 160px;
+            }
+        }
+    }
+    .online-future{
+        .container{
+            .online-future-content{
+                padding-top: 160px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 440px){
@@ -1331,6 +1410,7 @@ hr{
             .contact-details{
                 flex-direction: column;
                 gap: 30px;
+                padding-left: 20px;
                 .call{
                     .call-text{
                         margin-bottom: 10px;
@@ -1440,5 +1520,26 @@ hr{
 @media screen and (max-width: 334px){
     .get-started{
         top: 48%;
+    }
+    .balenciaga-wall{
+        .container{
+            .balenciaga-wall-content{
+                padding-top: 270px;
+            }
+        }
+    }
+    .future-3D{
+        .container{
+            .future-3D-content{
+                padding-top: 320px;
+            }
+        }
+    }
+    .online-future{
+        .container{
+            .online-future-content{
+                padding-top: 250px;
+            }
+        }
     }
 }

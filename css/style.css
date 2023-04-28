@@ -36,6 +36,13 @@ html {
 #first-two-sections {
   position: relative;
 }
+#first-two-sections hr {
+  height: 1px;
+  background-color: #DFDFDF;
+  border: none;
+  width: 80%;
+  margin: auto;
+}
 
 .company-logo {
   position: absolute; /* position this div absolutely */
@@ -222,14 +229,6 @@ html {
   font-weight: 500;
 }
 
-hr {
-  height: 1px;
-  background-color: #DFDFDF;
-  border: none;
-  width: 80%;
-  margin: auto;
-}
-
 .project-intro .container {
   max-width: 1140px;
   display: flex;
@@ -255,6 +254,7 @@ hr {
 .balenciaga-wall .container {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .balenciaga-wall .container .balenciaga-image .balenciaga-wall-image {
@@ -302,7 +302,7 @@ hr {
 .balenciaga-wall .balencia-wall-thought {
   position: absolute;
   bottom: 0;
-  left: 30%;
+  right: 40%;
   z-index: 999;
 }
 .balenciaga-wall .balencia-wall-thought .balencia-wall-card {
@@ -355,9 +355,7 @@ hr {
   flex-direction: row-reverse;
   align-items: center;
   flex-wrap: wrap;
-}
-.future-3D .container .future-3D-image {
-  margin: 0 auto;
+  justify-content: center;
 }
 .future-3D .container .future-3D-image img {
   width: 100%;
@@ -455,10 +453,8 @@ hr {
 .online-future .container {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-}
-.online-future .container .online-future-image {
-  margin: 0 auto;
 }
 .online-future .container .online-future-image img {
   width: 100%;
@@ -505,7 +501,7 @@ hr {
 .online-future .online-future-thought {
   position: absolute;
   bottom: 0;
-  left: 30%;
+  right: 40%;
   z-index: 999;
 }
 .online-future .online-future-thought .online-future-card {
@@ -620,6 +616,8 @@ hr {
   padding-left: 15px;
   line-height: 1.5;
   width: 100%;
+  border: 2px solid red;
+  max-width: 40%;
 }
 .evaluation .container .evaluation-cards {
   display: flex;
@@ -708,7 +706,9 @@ hr {
   font-weight: 600;
 }
 .footer .container hr {
+  height: 1px;
   background-color: #ADB78F;
+  border: none;
 }
 .footer .container .footer-middle {
   display: flex;
@@ -852,6 +852,9 @@ hr {
   .get-started {
     top: 47%;
   }
+  .evaluation .container .evaluation-heading h2 {
+    max-width: 50%;
+  }
 }
 @media screen and (max-width: 977px) {
   .get-started {
@@ -896,6 +899,9 @@ hr {
     padding: 20px;
     border-radius: 8px;
   }
+  .evaluation .container .evaluation-heading h2 {
+    max-width: 55%;
+  }
   .footer .container .footer-middle .complete-services {
     gap: 60px;
   }
@@ -916,6 +922,9 @@ hr {
 @media screen and (max-width: 794px) {
   .get-started {
     top: 57%;
+  }
+  .evaluation .container .evaluation-heading h2 {
+    max-width: 60%;
   }
 }
 @media screen and (max-width: 789px) {
@@ -959,6 +968,11 @@ hr {
     text-align: center;
   }
 }
+@media screen and (max-width: 723px) {
+  .evaluation .container .evaluation-heading h2 {
+    max-width: 70%;
+  }
+}
 @media screen and (max-width: 691px) {
   .get-started {
     top: 50%;
@@ -978,6 +992,11 @@ hr {
   }
   .online-future .container .online-future-content .online-future-heading {
     font-size: 30px;
+  }
+}
+@media screen and (max-width: 624px) {
+  .evaluation .container .evaluation-heading h2 {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 589px) {
@@ -1063,6 +1082,15 @@ hr {
   .hero .container .hero-content .hero-title {
     font-size: 44px;
   }
+  .balenciaga-wall .container .balenciaga-wall-content {
+    padding-top: 160px;
+  }
+  .future-3D .container .future-3D-content {
+    padding-top: 160px;
+  }
+  .online-future .container .online-future-content {
+    padding-top: 160px;
+  }
 }
 @media screen and (max-width: 440px) {
   .get-started {
@@ -1099,6 +1127,7 @@ hr {
   .footer .container .contact-details {
     flex-direction: column;
     gap: 30px;
+    padding-left: 20px;
   }
   .footer .container .contact-details .call .call-text {
     margin-bottom: 10px;
@@ -1160,5 +1189,14 @@ hr {
 @media screen and (max-width: 334px) {
   .get-started {
     top: 48%;
+  }
+  .balenciaga-wall .container .balenciaga-wall-content {
+    padding-top: 270px;
+  }
+  .future-3D .container .future-3D-content {
+    padding-top: 320px;
+  }
+  .online-future .container .online-future-content {
+    padding-top: 250px;
   }
 }/*# sourceMappingURL=style.css.map */
