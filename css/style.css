@@ -222,6 +222,14 @@ html {
   font-weight: 500;
 }
 
+hr {
+  height: 1px;
+  background-color: #DFDFDF;
+  border: none;
+  width: 80%;
+  margin: auto;
+}
+
 .project-intro .container {
   max-width: 1140px;
   display: flex;
@@ -248,9 +256,6 @@ html {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-}
-.balenciaga-wall .container .balenciaga-image {
-  margin: 0 auto;
 }
 .balenciaga-wall .container .balenciaga-image .balenciaga-wall-image {
   width: 100%;

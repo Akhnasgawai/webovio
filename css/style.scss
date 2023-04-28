@@ -237,6 +237,14 @@ html{
     }
 }
 
+hr{
+    height: 1px;
+    background-color: #DFDFDF;
+    border: none;
+    width: 80%;
+    margin: auto;
+}
+
 .project-intro{
     .container{
         max-width: 1140px;
@@ -269,7 +277,7 @@ html{
         align-items: center;
         flex-wrap: wrap;
         .balenciaga-image{
-            margin: 0 auto;
+            // margin: 0 auto;
             .balenciaga-wall-image{
                 width: 100%;
             }
