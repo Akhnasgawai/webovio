@@ -1,1 +1,1159 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  line-height: 1.15;
+}
+
+.header {
+  padding: 24px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.header nav .hamburger-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+#first-two-sections {
+  position: relative;
+}
+
+.company-logo {
+  position: absolute; /* position this div absolutely */
+  top: 50%; /* position it 50% from the top */
+  left: 50%;
+  transform: translate(-44.5%, -50%);
+  min-width: 90%;
+  min-height: 100px;
+  background-color: #FAFAFA;
+  box-shadow: -15px 18px 136px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -15px 18px 136px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -15px 18px 136px 3px rgba(0, 0, 0, 0.75);
+}
+.company-logo .container {
+  width: 90%; /* set width to 90% */
+  height: 100%;
+}
+.company-logo .container .logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.company-logo .container .logos img {
+  max-width: 15%;
+  max-height: 15%;
+}
+
+.hero {
+  background: url(../images/main-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 189px;
+  padding-bottom: 100px;
+}
+.hero .container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.hero .container .hero-content {
+  max-width: 616px;
+  color: #fff;
+}
+.hero .container .hero-content .hero-subtitle {
+  display: inline-block;
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.hero .container .hero-content .hero-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 74px;
+}
+.hero .container .hero-content .hero-desc {
+  margin-bottom: 18px;
+}
+.hero .container .hero-content .hero-link {
+  cursor: pointer;
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFD723;
+}
+.hero .container .hero-content .hero-link .play-btn {
+  width: 12px;
+  height: 12px;
+  fill: #FFD723;
+}
+.hero .container .hero-content .hero-link .hero-link-text {
+  text-indent: 10px;
+  border-bottom: 1px solid #FFD723;
+}
+
+.strategy .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-items: flex-end;
+  max-width: 1140px;
+  padding: 0 15px;
+  padding-bottom: 150px;
+  margin: 0 auto;
+}
+.strategy .container .strategy-content {
+  max-width: 516px;
+}
+.strategy .container .strategy-content .strategy-subtitle {
+  display: inline-block;
+  margin-bottom: 22px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #777C6A;
+}
+.strategy .container .strategy-content .strategy-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: #4E533D;
+}
+.strategy .container .strategy-content .strategy-title span {
+  background-color: #FFFBE8;
+}
+.strategy .container .strategy-content .strategy-desc {
+  margin-bottom: 18px;
+  color: #8C999E;
+}
+.strategy .container .strategy-content .strategy-link {
+  cursor: pointer;
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #DFDFDF;
+}
+.strategy .container .strategy-content .strategy-link .play-btn {
+  width: 12px;
+  height: 12px;
+  fill: #DFDFDF;
+}
+.strategy .container .strategy-content .strategy-link .strategy-link-text {
+  text-indent: 10px;
+  border-bottom: 1px solid #DFDFDF;
+}
+.strategy .container .strategy-thought .strategy-card {
+  max-width: 310px;
+  height: 450px;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  box-shadow: 0px 12px 67px 12px rgb(125, 125, 125);
+}
+.strategy .container .strategy-thought .strategy-card .strategy-thought-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  height: 250px;
+}
+.strategy .container .strategy-thought .strategy-card .strategy-thought-text .thought-text {
+  line-height: 1.5;
+  font-style: italic;
+  color: #747967;
+}
+.strategy .container .strategy-thought .strategy-card .strategy-thought-text .thought-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.strategy .container .strategy-thought .strategy-card .strategy-thought-text .thought-author .strategic-author-image {
+  border-radius: 50%;
+  width: 70px;
+  box-shadow: 13px 12px 55px 0px rgb(125, 125, 125);
+}
+.strategy .container .strategy-thought .strategy-card .strategy-thought-text .thought-author .author {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.strategy .container .strategy-thought .strategy-card .strategy-thought-text .thought-author .author .strategic-author-name {
+  color: #4E533D;
+}
+.strategy .container .strategy-thought .strategy-card .strategy-thought-text .thought-author .author .strategic-author-desg {
+  color: #BABEC2;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.project-intro .container {
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 15px;
+  margin: 50px auto 50px auto;
+}
+.project-intro .container .intro-heading h2 {
+  max-width: 250px;
+  line-height: 1.5;
+}
+.project-intro .container .intro-text p {
+  max-width: 470px;
+  color: #8C999E;
+  line-height: 1.5;
+}
+
+.balenciaga-wall {
+  position: relative;
+  padding: 50px 0;
+}
+.balenciaga-wall .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.balenciaga-wall .container .balenciaga-image {
+  margin: 0 auto;
+}
+.balenciaga-wall .container .balenciaga-image .balenciaga-wall-image {
+  width: 100%;
+}
+.balenciaga-wall .container .balenciaga-wall-content {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.balenciaga-wall .container .balenciaga-wall-content .balenciaga-wall-heading {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #525741;
+}
+.balenciaga-wall .container .balenciaga-wall-content .balenciaga-wall-text-1 {
+  line-height: 1.5;
+  margin-bottom: 24px;
+  color: #929DA2;
+}
+.balenciaga-wall .container .balenciaga-wall-content .balenciaga-wall-text-2 {
+  line-height: 1.5;
+  margin-bottom: 72px;
+  color: #929DA2;
+}
+.balenciaga-wall .container .balenciaga-wall-content .balenciaga-wall-link {
+  cursor: pointer;
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #8C999E;
+}
+.balenciaga-wall .container .balenciaga-wall-content .balenciaga-wall-link .play-btn {
+  width: 12px;
+  height: 12px;
+  fill: #8C999E;
+}
+.balenciaga-wall .container .balenciaga-wall-content .balenciaga-wall-link .balenciaga-wall-link-text {
+  text-indent: 10px;
+  border-bottom: 1px solid #8C999E;
+}
+.balenciaga-wall .balencia-wall-thought {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  z-index: 999;
+}
+.balenciaga-wall .balencia-wall-thought .balencia-wall-card {
+  width: 430px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 26px 26px 43px -19px rgb(125, 125, 125);
+}
+.balenciaga-wall .balencia-wall-thought .balencia-wall-card .balencia-wall-thought-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.balenciaga-wall .balencia-wall-thought .balencia-wall-card .balencia-wall-thought-text .thought-text {
+  line-height: 1.5;
+  font-style: italic;
+  color: #747967;
+}
+.balenciaga-wall .balencia-wall-thought .balencia-wall-card .balencia-wall-thought-text .thought-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.balenciaga-wall .balencia-wall-thought .balencia-wall-card .balencia-wall-thought-text .thought-author .balencia-wall-author-image {
+  border-radius: 50%;
+  width: 50px;
+  box-shadow: 13px 12px 55px 0px rgb(125, 125, 125);
+}
+.balenciaga-wall .balencia-wall-thought .balencia-wall-card .balencia-wall-thought-text .thought-author .author {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.balenciaga-wall .balencia-wall-thought .balencia-wall-card .balencia-wall-thought-text .thought-author .author .balencia-wall-author-name {
+  color: #4E533D;
+}
+.balenciaga-wall .balencia-wall-thought .balencia-wall-card .balencia-wall-thought-text .thought-author .author .balencia-wall-author-desg {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.future-3D {
+  position: relative;
+  padding: 50px 0;
+}
+.future-3D .container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.future-3D .container .future-3D-image {
+  margin: 0 auto;
+}
+.future-3D .container .future-3D-image img {
+  width: 100%;
+}
+.future-3D .container .future-3D-content {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.future-3D .container .future-3D-content .future-3D-heading {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #525741;
+}
+.future-3D .container .future-3D-content .future-3D-text-1 {
+  line-height: 1.5;
+  margin-bottom: 24px;
+  color: #929DA2;
+}
+.future-3D .container .future-3D-content .future-3D-text-2 {
+  line-height: 1.5;
+  margin-bottom: 72px;
+  color: #929DA2;
+}
+.future-3D .container .future-3D-content .future-3D-link {
+  cursor: pointer;
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #8C999E;
+}
+.future-3D .container .future-3D-content .future-3D-link .play-btn {
+  width: 12px;
+  height: 12px;
+  fill: #8C999E;
+}
+.future-3D .container .future-3D-content .future-3D-link .future-3D-link-text {
+  text-indent: 10px;
+  border-bottom: 1px solid #8C999E;
+}
+.future-3D .future-3D-thought {
+  position: absolute;
+  bottom: 0;
+  right: 30%;
+  z-index: 999;
+}
+.future-3D .future-3D-thought .future-3D-card {
+  width: 430px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 26px 26px 43px -19px rgb(125, 125, 125);
+}
+.future-3D .future-3D-thought .future-3D-card .future-3D-thought-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.future-3D .future-3D-thought .future-3D-card .future-3D-thought-text .thought-text {
+  line-height: 1.5;
+  font-style: italic;
+  color: #747967;
+}
+.future-3D .future-3D-thought .future-3D-card .future-3D-thought-text .thought-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.future-3D .future-3D-thought .future-3D-card .future-3D-thought-text .thought-author .future-3D-author-image {
+  border-radius: 50%;
+  width: 50px;
+  box-shadow: 13px 12px 55px 0px rgb(125, 125, 125);
+}
+.future-3D .future-3D-thought .future-3D-card .future-3D-thought-text .thought-author .author {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.future-3D .future-3D-thought .future-3D-card .future-3D-thought-text .thought-author .author .future-3D-author-name {
+  color: #4E533D;
+}
+.future-3D .future-3D-thought .future-3D-card .future-3D-thought-text .thought-author .author .future-3D-author-desg {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.online-future {
+  position: relative;
+  padding: 50px 0;
+}
+.online-future .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.online-future .container .online-future-image {
+  margin: 0 auto;
+}
+.online-future .container .online-future-image img {
+  width: 100%;
+}
+.online-future .container .online-future-content {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.online-future .container .online-future-content .online-future-heading {
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #525741;
+}
+.online-future .container .online-future-content .online-future-text-1 {
+  line-height: 1.5;
+  margin-bottom: 24px;
+  color: #8C999E;
+}
+.online-future .container .online-future-content .online-future-text-2 {
+  line-height: 1.5;
+  margin-bottom: 72px;
+  color: #8C999E;
+}
+.online-future .container .online-future-content .online-future-link {
+  cursor: pointer;
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #929DA2;
+}
+.online-future .container .online-future-content .online-future-link .play-btn {
+  width: 12px;
+  height: 12px;
+  fill: #929DA2;
+}
+.online-future .container .online-future-content .online-future-link .online-future-link-text {
+  text-indent: 10px;
+  border-bottom: 1px solid #8C999E;
+}
+.online-future .online-future-thought {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  z-index: 999;
+}
+.online-future .online-future-thought .online-future-card {
+  width: 430px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 26px 26px 43px -19px rgb(125, 125, 125);
+}
+.online-future .online-future-thought .online-future-card .online-future-thought-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.online-future .online-future-thought .online-future-card .online-future-thought-text .thought-text {
+  line-height: 1.5;
+  font-style: italic;
+  color: #747967;
+}
+.online-future .online-future-thought .online-future-card .online-future-thought-text .thought-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.online-future .online-future-thought .online-future-card .online-future-thought-text .thought-author .online-future-author-image {
+  border-radius: 50%;
+  width: 50px;
+  box-shadow: 13px 12px 55px 0px rgb(125, 125, 125);
+}
+.online-future .online-future-thought .online-future-card .online-future-thought-text .thought-author .author {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.online-future .online-future-thought .online-future-card .online-future-thought-text .thought-author .author .online-future-author-name {
+  color: #4E533D;
+}
+.online-future .online-future-thought .online-future-card .online-future-thought-text .thought-author .author .online-future-author-desg {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#last-two-sections {
+  position: relative;
+}
+
+.get-started {
+  position: absolute; /* position this div absolutely */
+  top: 46%; /* position it 50% from the top */
+  left: 50%;
+  transform: translate(-56%, -50%);
+  min-width: 90%;
+  background-color: #FAFAFA;
+}
+.get-started .container .amazing-together {
+  min-height: 270px;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.get-started .container .amazing-together h2 {
+  max-width: 500px;
+  color: #525741;
+  line-height: 1.5;
+  font-size: 40px;
+  padding-right: 15px;
+}
+.get-started .container .amazing-together .get-started-link {
+  cursor: pointer;
+  display: inline-flex;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #929DA2;
+}
+.get-started .container .amazing-together .get-started-link .play-btn {
+  width: 12px;
+  height: 12px;
+  fill: #929DA2;
+}
+.get-started .container .amazing-together .get-started-link .get-started-link-text {
+  text-transform: uppercase;
+  text-indent: 10px;
+  border-bottom: 1px solid #929DA2;
+}
+
+.evaluation {
+  max-width: 1100px;
+  padding-bottom: 175px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 95px;
+  padding: 95px 15px 175px 15px;
+}
+.evaluation .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.evaluation .container .evaluation-heading {
+  color: #4E533D;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.evaluation .container .evaluation-heading h2 {
+  display: block;
+  padding-left: 15px;
+  line-height: 1.5;
+  width: 100%;
+}
+.evaluation .container .evaluation-cards {
+  display: flex;
+}
+.evaluation .container .evaluation-cards div {
+  border-radius: 5px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: 0.8s all;
+}
+.evaluation .container .evaluation-cards div h4 {
+  text-transform: uppercase;
+  color: #4E533D;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 550;
+  font-size: 18px;
+  cursor: default;
+}
+.evaluation .container .evaluation-cards div p {
+  color: #8C999E;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  cursor: default;
+  height: 120px;
+}
+.evaluation .container .evaluation-cards div a {
+  cursor: pointer;
+  display: inline-flex;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  color: #929DA2;
+}
+.evaluation .container .evaluation-cards div a .play-btn {
+  width: 12px;
+  height: 12px;
+  fill: #929DA2;
+}
+.evaluation .container .evaluation-cards div a span {
+  text-indent: 10px;
+  border-bottom: 1px solid #929DA2;
+}
+.evaluation .container .evaluation-cards div a:hover .play-btn {
+  fill: #FFD723;
+}
+.evaluation .container .evaluation-cards div a:hover span {
+  color: #FFD723;
+}
+.evaluation .container .evaluation-cards div:hover {
+  box-shadow: 41px 46px 87px -30px rgb(125, 125, 125);
+}
+
+.footer {
+  background: url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 220px;
+  flex-direction: row;
+}
+.footer .container {
+  max-width: 1050px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer .container .contact-details {
+  display: flex;
+  gap: 100px;
+  padding-bottom: 40px;
+}
+.footer .container .contact-details div h5 {
+  font-weight: 450;
+  color: #ADB78F;
+  margin-bottom: 20px;
+}
+.footer .container .contact-details div p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.footer .container hr {
+  background-color: #ADB78F;
+}
+.footer .container .footer-middle {
+  display: flex;
+  gap: 200px;
+}
+.footer .container .footer-middle .complete-services {
+  padding-top: 40px;
+  display: flex;
+  gap: 100px;
+}
+.footer .container .footer-middle .complete-services div h5 {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  font-weight: 600;
+}
+.footer .container .footer-middle .complete-services div p {
+  color: #ADB78F;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 450;
+}
+.footer .container .footer-middle .in-touch {
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+.footer .container .footer-middle .in-touch h5:not(:last-child) {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+  font-weight: 600;
+}
+.footer .container .footer-middle .in-touch p {
+  color: #ADB78F;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 450;
+}
+.footer .container .footer-middle .in-touch h4 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.footer .container .footer-middle .in-touch .social-media .fa-brands {
+  padding: 11px 30px 11px 12px;
+  background-color: #454A35;
+  font-size: 20px;
+  color: #adb78f;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 3px 5px;
+  border-radius: 50%;
+  transition: 0.8s all;
+}
+.footer .container .footer-middle .in-touch .social-media .fa-brands:hover {
+  background-color: #FFD723;
+  color: #fff;
+}
+.footer .container .footer-middle .in-touch .social-media .fa-facebook-f {
+  padding: 11px 27px 11px 14px;
+}
+.footer .container .footer-middle .in-touch .social-media .fa-google-plus-g {
+  padding: 11px 32px 11px 8px;
+}
+.footer .container .footer-last {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.footer .container .footer-last div img {
+  height: 30px;
+}
+.footer .container .footer-last div p {
+  font-weight: 500;
+  color: #ADB78F;
+}
+
+@media screen and (max-width: 1135px) {
+  .balenciaga-wall .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .balenciaga-wall .container .balenciaga-wall-content {
+    padding-top: 120px;
+    max-width: 700px;
+  }
+  .balenciaga-wall .balencia-wall-thought {
+    height: -moz-max-content;
+    height: max-content;
+    width: -moz-max-content;
+    width: max-content;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .future-3D .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .future-3D .container .future-3D-content {
+    padding-top: 120px;
+    max-width: 700px;
+  }
+  .future-3D .future-3D-thought {
+    height: -moz-max-content;
+    height: max-content;
+    width: -moz-max-content;
+    width: max-content;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .online-future .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .online-future .container .online-future-content {
+    padding-top: 120px;
+    max-width: 700px;
+  }
+  .online-future .online-future-thought {
+    height: -moz-max-content;
+    height: max-content;
+    width: -moz-max-content;
+    width: max-content;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1084px) {
+  .get-started {
+    top: 47%;
+  }
+}
+@media screen and (max-width: 977px) {
+  .get-started {
+    top: 55%;
+  }
+  .evaluation {
+    padding-top: 105;
+    padding-bottom: 185;
+  }
+  .evaluation .container .evaluation-cards {
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .evaluation .container .evaluation-cards div {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 909px) {
+  .footer .container .footer-middle {
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 885px) {
+  .company-logo {
+    top: 41%; /* position it 50% from the top */
+    left: 50%;
+    transform: translate(-44.5%, -50%);
+  }
+  .strategy .container {
+    padding-top: 120px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .strategy .container .strategy-content {
+    max-width: 536px;
+  }
+  .strategy .container .strategy-thought .strategy-card {
+    max-width: 430px;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .footer .container .footer-middle .complete-services {
+    gap: 60px;
+  }
+  .footer .container .footer-middle {
+    gap: 90px;
+  }
+}
+@media screen and (max-width: 809px) {
+  .footer .container .footer-middle .complete-services {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 802px) {
+  .get-started {
+    top: 56%;
+  }
+}
+@media screen and (max-width: 794px) {
+  .get-started {
+    top: 57%;
+  }
+}
+@media screen and (max-width: 789px) {
+  .footer .container .footer-middle .complete-services {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .get-started {
+    top: 50%;
+  }
+  .footer .container .footer-middle {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer .container .footer-middle .in-touch {
+    margin-bottom: 40px;
+  }
+  .footer .container .footer-middle {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer .container .footer-middle .complete-services {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer .container .footer-middle .complete-services div {
+    padding: 0 20px;
+  }
+  .footer .container .footer-middle .in-touch {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 754px) {
+  .project-intro .container .intro-heading h2 {
+    text-align: center;
+  }
+  .project-intro .container .intro-text p {
+    margin-top: 25px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 691px) {
+  .get-started {
+    top: 50%;
+  }
+}
+@media screen and (max-width: 687px) {
+  .get-started {
+    top: 51%;
+  }
+}
+@media screen and (max-width: 673px) {
+  .balenciaga-wall .container .balenciaga-wall-content .balenciaga-wall-heading {
+    font-size: 30px;
+  }
+  .future-3D .container .future-3D-content .future-3D-heading {
+    font-size: 30px;
+  }
+  .online-future .container .online-future-content .online-future-heading {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 589px) {
+  .hero .container .hero-content .hero-title {
+    font-size: 54px;
+  }
+}
+@media screen and (max-width: 556px) {
+  .get-started {
+    top: 41%;
+  }
+  .footer .container .footer-middle .complete-services {
+    flex-wrap: wrap;
+  }
+  .footer .container .footer-middle .complete-services div {
+    width: 80%;
+  }
+  .footer .container .footer-last {
+    flex-wrap: wrap;
+  }
+  .footer .container .footer-last .copyrights {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 533px) {
+  .hero .container .hero-content .hero-title {
+    font-size: 46px;
+  }
+}
+@media screen and (max-width: 527px) {
+  .get-started {
+    top: 40%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .balenciaga-wall .balencia-wall-thought {
+    top: -20%;
+  }
+  .balenciaga-wall .balencia-wall-thought .balencia-wall-card {
+    width: 310px;
+  }
+  .future-3D .future-3D-thought {
+    top: -20%;
+  }
+  .future-3D .future-3D-thought .future-3D-card {
+    width: 310px;
+  }
+  .online-future .online-future-thought {
+    top: -20%;
+  }
+  .online-future .online-future-thought .online-future-card {
+    width: 310px;
+  }
+}
+@media screen and (max-width: 489px) {
+  .get-started .container .amazing-together h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .get-started {
+    top: 49%;
+  }
+  .company-logo {
+    min-height: 60px;
+  }
+  .strategy .container .strategy-content .strategy-title {
+    font-size: 37px;
+  }
+  .evaluation .container .evaluation-cards {
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .evaluation .container .evaluation-cards div {
+    width: 80%;
+  }
+  .evaluation .container .evaluation-cards div p {
+    height: 80px;
+  }
+}
+@media screen and (max-width: 459px) {
+  .hero .container .hero-content .hero-title {
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .get-started {
+    top: 49%;
+  }
+  .hero .container .hero-content .hero-title {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 439px) {
+  .strategy .container .strategy-content .strategy-title {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 412px) {
+  .balenciaga-wall .container .balenciaga-wall-content {
+    padding-top: 280px;
+  }
+  .balenciaga-wall .balencia-wall-thought .balencia-wall-card {
+    width: 260px;
+  }
+  .future-3D .container .future-3D-content {
+    padding-top: 280px;
+  }
+  .future-3D .future-3D-thought .future-3D-card {
+    width: 260px;
+  }
+  .online-future .container .online-future-content {
+    padding-top: 280px;
+  }
+  .online-future .online-future-thought .online-future-card {
+    width: 260px;
+  }
+  .footer .container .contact-details {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer .container .contact-details .call .call-text {
+    margin-bottom: 10px;
+  }
+  .footer .container .contact-details .address .address-text {
+    margin-bottom: 10px;
+  }
+  .get-started {
+    top: 48%;
+  }
+}
+@media screen and (max-width: 404px) {
+  .company-logo {
+    top: 40%; /* position it 50% from the top */
+    left: 50%;
+    transform: translate(-44.5%, -50%);
+  }
+  .strategy .container .strategy-content .strategy-title {
+    line-height: 1.45;
+    font-size: 30px;
+  }
+  .hero .container .hero-content .hero-title {
+    line-height: 1.45;
+  }
+}
+@media screen and (max-width: 385px) {
+  .company-logo {
+    top: 39.5%; /* position it 50% from the top */
+    left: 50%;
+    transform: translate(-44.5%, -50%);
+  }
+  .hero .container .hero-content .hero-title {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 395px) {
+  .get-started .container .amazing-together h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .get-started .container .amazing-together h2 {
+    font-size: 26px;
+  }
+  .company-logo {
+    top: 39%; /* position it 50% from the top */
+    left: 50%;
+    transform: translate(-44.5%, -50%);
+  }
+}
+@media screen and (max-width: 362px) {
+  .get-started {
+    top: 48.5%;
+  }
+  .strategy .container .strategy-content .strategy-title {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 334px) {
+  .get-started {
+    top: 48%;
+  }
+}/*# sourceMappingURL=style.css.map */
