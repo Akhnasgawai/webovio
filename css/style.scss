@@ -285,6 +285,7 @@ html{
         .balenciaga-wall-content{
             max-width: 400px;
             margin: 0 auto;
+            cursor: default;
             .balenciaga-wall-heading{
                 font-size: 40px;
                 line-height: 1.2;
@@ -318,6 +319,16 @@ html{
                 .balenciaga-wall-link-text{
                     text-indent: 10px;
                     border-bottom: 1px solid #8C999E;
+                }
+            }
+            &:hover{
+                .balenciaga-wall-link{
+                    .play-btn{
+                        fill: #FFD723;
+                    }
+                    .balenciaga-wall-link-text{
+                        color: #FFD723;
+                    }
                 }
             }
         }
@@ -392,6 +403,7 @@ html{
         .future-3D-content{
             max-width: 400px;
             margin: 0 auto;
+            cursor: default;
             .future-3D-heading{
                 font-size: 40px;
                 line-height: 1.2;
@@ -425,6 +437,16 @@ html{
                 .future-3D-link-text{
                     text-indent: 10px;
                     border-bottom: 1px solid #8C999E;
+                }
+            }
+            &:hover{
+                .future-3D-link{
+                    .play-btn{
+                        fill: #FFD723;
+                    }
+                    .future-3D-link-text{
+                        color: #FFD723;
+                    }
                 }
             }
         }
@@ -498,6 +520,7 @@ html{
         .online-future-content{
             max-width: 400px;
             margin: 0 auto;
+            cursor: default;
             .online-future-heading{
                 font-size: 40px;
                 line-height: 1.2;
@@ -531,6 +554,16 @@ html{
                 .online-future-link-text{
                     text-indent: 10px;
                     border-bottom: 1px solid #8C999E;
+                }
+            }
+            &:hover{
+                .online-future-link{
+                    .play-btn{
+                        fill: #FFD723;
+                    }
+                    .online-future-link-text{
+                        color: #FFD723;
+                    }
                 }
             }
         }
@@ -637,6 +670,16 @@ html{
                     border-bottom: 1px solid #929DA2;
                 }
             }
+            &:hover{
+                .get-started-link{
+                    .play-btn{
+                        fill: #FFD723;
+                    }
+                    .get-started-link-text{
+                        color: #FFD723;
+                    }
+                }
+            }
         }
     }
 }
@@ -715,7 +758,12 @@ html{
                         text-indent: 10px;
                         border-bottom: 1px solid #929DA2;
                     }
-                    &:hover{
+                }
+                &:hover{
+                    -webkit-box-shadow: 41px 46px 87px -30px rgba(125,125,125,1);
+                    -moz-box-shadow: 41px 46px 87px -30px rgba(125,125,125,1);
+                    box-shadow: 41px 46px 87px -30px rgba(125,125,125,1);
+                    a{
                         .play-btn{
                             fill: #FFD723;
                         }
@@ -723,11 +771,6 @@ html{
                             color: #FFD723;
                         }
                     }
-                }
-                &:hover{
-                    -webkit-box-shadow: 41px 46px 87px -30px rgba(125,125,125,1);
-                    -moz-box-shadow: 41px 46px 87px -30px rgba(125,125,125,1);
-                    box-shadow: 41px 46px 87px -30px rgba(125,125,125,1);
                 }
             }
         }

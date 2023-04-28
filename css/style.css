@@ -263,6 +263,7 @@ html {
 .balenciaga-wall .container .balenciaga-wall-content {
   max-width: 400px;
   margin: 0 auto;
+  cursor: default;
 }
 .balenciaga-wall .container .balenciaga-wall-content .balenciaga-wall-heading {
   font-size: 40px;
@@ -298,6 +299,12 @@ html {
 .balenciaga-wall .container .balenciaga-wall-content .balenciaga-wall-link .balenciaga-wall-link-text {
   text-indent: 10px;
   border-bottom: 1px solid #8C999E;
+}
+.balenciaga-wall .container .balenciaga-wall-content:hover .balenciaga-wall-link .play-btn {
+  fill: #FFD723;
+}
+.balenciaga-wall .container .balenciaga-wall-content:hover .balenciaga-wall-link .balenciaga-wall-link-text {
+  color: #FFD723;
 }
 .balenciaga-wall .balencia-wall-thought {
   position: absolute;
@@ -363,6 +370,7 @@ html {
 .future-3D .container .future-3D-content {
   max-width: 400px;
   margin: 0 auto;
+  cursor: default;
 }
 .future-3D .container .future-3D-content .future-3D-heading {
   font-size: 40px;
@@ -398,6 +406,12 @@ html {
 .future-3D .container .future-3D-content .future-3D-link .future-3D-link-text {
   text-indent: 10px;
   border-bottom: 1px solid #8C999E;
+}
+.future-3D .container .future-3D-content:hover .future-3D-link .play-btn {
+  fill: #FFD723;
+}
+.future-3D .container .future-3D-content:hover .future-3D-link .future-3D-link-text {
+  color: #FFD723;
 }
 .future-3D .future-3D-thought {
   position: absolute;
@@ -462,6 +476,7 @@ html {
 .online-future .container .online-future-content {
   max-width: 400px;
   margin: 0 auto;
+  cursor: default;
 }
 .online-future .container .online-future-content .online-future-heading {
   font-size: 40px;
@@ -497,6 +512,12 @@ html {
 .online-future .container .online-future-content .online-future-link .online-future-link-text {
   text-indent: 10px;
   border-bottom: 1px solid #8C999E;
+}
+.online-future .container .online-future-content:hover .online-future-link .play-btn {
+  fill: #FFD723;
+}
+.online-future .container .online-future-content:hover .online-future-link .online-future-link-text {
+  color: #FFD723;
 }
 .online-future .online-future-thought {
   position: absolute;
@@ -591,6 +612,12 @@ html {
   text-indent: 10px;
   border-bottom: 1px solid #929DA2;
 }
+.get-started .container .amazing-together:hover .get-started-link .play-btn {
+  fill: #FFD723;
+}
+.get-started .container .amazing-together:hover .get-started-link .get-started-link-text {
+  color: #FFD723;
+}
 
 .evaluation {
   max-width: 1100px;
@@ -666,14 +693,14 @@ html {
   text-indent: 10px;
   border-bottom: 1px solid #929DA2;
 }
-.evaluation .container .evaluation-cards div a:hover .play-btn {
-  fill: #FFD723;
-}
-.evaluation .container .evaluation-cards div a:hover span {
-  color: #FFD723;
-}
 .evaluation .container .evaluation-cards div:hover {
   box-shadow: 41px 46px 87px -30px rgb(125, 125, 125);
+}
+.evaluation .container .evaluation-cards div:hover a .play-btn {
+  fill: #FFD723;
+}
+.evaluation .container .evaluation-cards div:hover a span {
+  color: #FFD723;
 }
 
 .footer {
